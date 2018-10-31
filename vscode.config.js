@@ -1,3 +1,4 @@
+//
 const config = {
   'editor.fontSize': 20,
   'editor.fontFamily': "simsun Consolas, 'Courier New', monospace",
@@ -94,6 +95,8 @@ const config = {
   'docthis.authorName': 'wzheng',
   'docthis.includeDateTag': true,
   'docthis.includeAuthorTag': true,
-  'docthis.includeDescriptionTag': true
+  'docthis.includeDescriptionTag': true,
+  'sync.gist': '29c221bdf6df1c03c0a35d9d1ccd7a12'
 };
+
 export default config;
