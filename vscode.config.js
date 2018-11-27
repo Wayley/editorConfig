@@ -19,7 +19,8 @@ const config = {
   'files.associations': {
     '*.vue': 'vue',
     '*.wxss': 'css',
-    '*.wxml': 'wxml'
+    '*.wxml': 'wxml',
+    '*.ejs': 'ejs'
   },
   // 为指定的语法定义配置文件或使用带有特定规则的配置文件。
   'emmet.syntaxProfiles': {
@@ -47,7 +48,15 @@ const config = {
   'prettier.semi': true,
   'vetur.format.defaultFormatter.html': 'js-beautify-html',
   'vetur.format.defaultFormatterOptions': {
-    // "wrap_attributes": "force-aligned"
+    'js-beautify-html': {
+      wrap_attributes: 'auto' // [auto|force|force-aligned|force-expand-multiline] ["auto"]
+    },
+    prettyhtml: {
+      printWidth: 1000,
+      singleQuote: false,
+      wrapAttributes: false,
+      sortAttributes: false
+    }
   },
   'workbench.iconTheme': 'material-icon-theme',
   // 启用后，按下 TAB 键，将展开 Emmet 缩写。
@@ -98,5 +107,4 @@ const config = {
   'docthis.includeDescriptionTag': true,
   'sync.gist': '29c221bdf6df1c03c0a35d9d1ccd7a12'
 };
-
 export default config;
