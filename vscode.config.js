@@ -4,9 +4,9 @@ const config = {
   'editor.fontFamily': "simsun Consolas, 'Courier New', monospace",
   'editor.wordWrap': 'bounded',
   'html.format.wrapLineLength': 70000,
-  'editor.wordWrapColumn': 8000000,
+  'editor.wordWrapColumn': 80000,
   // 对属性进行换行。
-  'html.format.wrapAttributes': 'auto',
+  'html.format.wrapAttributes': 'aligned-multiple',
   'html.format.enable': true,
   'html.format.indentHandlebars': true,
   // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
@@ -45,17 +45,21 @@ const config = {
   // ],
   'eslint.autoFixOnSave': true,
   'prettier.singleQuote': true,
-  'prettier.semi': true,
+  'prettier.semi': false, // 行尾是否打印分号
   'vetur.format.defaultFormatter.html': 'js-beautify-html',
   'vetur.format.defaultFormatterOptions': {
     'js-beautify-html': {
       wrap_attributes: 'auto' // [auto|force|force-aligned|force-expand-multiline] ["auto"]
     },
     prettyhtml: {
-      printWidth: 1000,
-      singleQuote: false,
+      printWidth: 100000,
+      singleQuote: true,
       wrapAttributes: false,
       sortAttributes: false
+    },
+    prettier: {
+      semi: false,
+      singleQuote: true
     }
   },
   'workbench.iconTheme': 'material-icon-theme',
@@ -92,6 +96,7 @@ const config = {
   '[wxml]': {},
   'javascript.implicitProjectConfig.experimentalDecorators': true,
   // koroFileHeader settings
+  // ctrl+alt+i
   'fileheader.customMade': {
     Author: 'wzheng(hb_wangzheng@163.com)',
     Company: 'uooc',
@@ -100,11 +105,32 @@ const config = {
     LastEditTime: 'Do not edit'
   },
   'fileheader.cursorMode': {},
+
   // `Document this` settings
+  // ctrl+alt+d
   'docthis.authorName': 'wzheng',
   'docthis.includeDateTag': true,
   'docthis.includeAuthorTag': true,
   'docthis.includeDescriptionTag': true,
-  'sync.gist': '29c221bdf6df1c03c0a35d9d1ccd7a12'
-};
-export default config;
+  'sync.gist': '29c221bdf6df1c03c0a35d9d1ccd7a12',
+  // Automatically compile SASS/SCSS file after saving
+  'easysass.compileAfterSave': false,
+  // 控制是否在搜索中跟踪符号链接。
+  'search.followSymlinks': false,
+  // Use single quotes instead of double quotes in JSX
+  'prettier.jsxSingleQuote': true,
+  'javascript.preferences.quoteStyle': 'single',
+  'eslint.validate': [
+    'javascript',
+    'javascriptreact',
+    'html',
+    {
+      language: 'vue',
+      autoFix: true
+    }
+  ],
+  // 定义函数参数括号前的空格处理方式。
+  'javascript.format.insertSpaceBeforeFunctionParenthesis': true
+}
+
+export default config
