@@ -29,7 +29,7 @@ const config = {
   // 为指定的语法定义配置文件或使用带有特定规则的配置文件。
   "emmet.syntaxProfiles": {
     "vue-html": "html",
-    vue: "html",
+    "vue": "html",
     "JavaScript React": "jsx"
   },
   "vetur.validation.template": true,
@@ -53,17 +53,17 @@ const config = {
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "vetur.format.defaultFormatterOptions": {
     "js-beautify-html": {
-      wrap_attributes: "auto" // [auto|force|force-aligned|force-expand-multiline] ["auto"]
+      "wrap_attributes": "auto" // [auto|force|force-aligned|force-expand-multiline] ["auto"]
     },
-    prettyhtml: {
-      printWidth: 100000,
-      singleQuote: true,
-      wrapAttributes: false,
-      sortAttributes: false
+    "prettyhtml": {
+      "printWidth": 100000,
+      "singleQuote": true,
+      "wrapAttributes": false,
+      "sortAttributes": false
     },
-    prettier: {
-      semi: false,
-      singleQuote: true
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
     }
   },
   "workbench.iconTheme": "vscode-icons",
@@ -74,9 +74,9 @@ const config = {
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
     "vue-html": "html",
-    javascript: "javascriptreact",
-    blade: "html",
-    wxml: "html"
+    "javascript": "javascriptreact",
+    "blade": "html",
+    "wxml": "html"
   },
   // 启用后，将在保存文件时剪裁尾随空格。
   "files.trimTrailingWhitespace": true,
@@ -101,13 +101,13 @@ const config = {
   // koroFileHeader settings
   // ctrl+alt+i
   "fileheader.customMade": {
-    Author: "wzheng(hb_wangzheng@163.com)",
-    Github: "https://github.com/wayley",
-    Company: "uooc",
-    Date: "Do not edit",
-    LastEditors: "wzheng(hb_wangzheng@163.com)",
-    LastEditTime: "Do not edit",
-    Description: ""
+    "Author": "wzheng(hb_wangzheng@163.com)",
+    "Github": "https://github.com/wayley",
+    "Company": "uooc",
+    "Date": "Do not edit",
+    "LastEditors": "wzheng(hb_wangzheng@163.com)",
+    "LastEditTime": "Do not edit",
+    "Description": ""
   },
   "fileheader.cursorMode": {},
   // `Document this` settings
@@ -129,8 +129,8 @@ const config = {
     "javascriptreact",
     "html",
     {
-      language: "vue",
-      autoFix: true
+      "language": "vue",
+      "autoFix": true
     }
   ],
   // 定义函数参数括号前的空格处理方式。
