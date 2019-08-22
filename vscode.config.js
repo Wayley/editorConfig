@@ -3,8 +3,8 @@ const config = {
   "editor.fontSize": 20,
   "editor.fontFamily": "simsun Consolas, 'Courier New', monospace",
   "editor.wordWrap": "bounded",
-  "html.format.wrapLineLength": 70000,
-  "editor.wordWrapColumn": 80000,
+  "html.format.wrapLineLength": 7000000000,
+  "editor.wordWrapColumn": 80000000,
   // 对属性进行换行。
   "html.format.wrapAttributes": "aligned-multiple",
   "html.format.enable": true,
@@ -48,7 +48,7 @@ const config = {
   //     "vue"
   // ],
   "eslint.autoFixOnSave": true,
-  "prettier.singleQuote": false, // 单引号 or 双引号
+  "prettier.singleQuote": true, // 单引号 or 双引号
   "prettier.semi": true, // 行尾是否打印分号
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "vetur.format.defaultFormatterOptions": {
@@ -72,8 +72,11 @@ const config = {
   // 一个制表符等于的空格数。该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
   "emmet.includeLanguages": {
     "vue-html": "html",
+    "vue": "html",
     "javascript": "javascriptreact",
     "blade": "html",
     "wxml": "html"
@@ -103,7 +106,7 @@ const config = {
   "fileheader.customMade": {
     "Author": "wzheng(hb_wangzheng@163.com)",
     "Github": "https://github.com/wayley",
-    "Company": "uooc",
+    "Company": "Fih-ACKN",
     "Date": "Do not edit",
     "LastEditors": "wzheng(hb_wangzheng@163.com)",
     "LastEditTime": "Do not edit",
@@ -135,6 +138,7 @@ const config = {
   ],
   // 定义函数参数括号前的空格处理方式。
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "minapp-vscode.disableAutoConfig": true
+  "minapp-vscode.disableAutoConfig": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
 };
 export default config;
